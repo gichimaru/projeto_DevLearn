@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <title>Kanban - TuscanoTask</title>
+   <link rel="stylesheet" href="style.css"> 
+   <style>
+       /* Estilos específicos do Kanban */
+       .kanban {
+           display: grid;
+           grid-template-columns: repeat(3, 1fr); 
+           gap: 20px;
+       }
+
+       .coluna {
+           background: #f8f9fa;
+           padding: 15px; 
+           border-radius: 8px;
+           min-height: 400px;
+       }
+
+       .coluna h3 {
+           margin-bottom: 15px;
+           color: #333; 
+       }
+
+       .coluna button {
+           margin-top: 10px;
+           width: 100%; 
+       }
+   </style>
+</head>
+<body>
+   <div class="container">
+       <div class="header">
+           <div class="header-title-group">
+               <img src="images/tucano.png" alt="Tucano" class="logo-pomodoro">
+               <h1>Quadro Kanban</h1>
+               <img src="images/tucano.png" alt="Tucano" class="logo-pomodoro right">
+           </div>
+           <button onclick="window.location.href='dashboard.html'" class="btn-voltar">Voltar</button>
+       </div>
+      
+       <div class="kanban">
+           <div class="coluna" id="todo">
+               <h3>To Do</h3> 
+               <div id="todoCards"></div>
+           </div>
+
+           <div class="coluna" id="inProgress">
+               <h3>In Progress</h3>
+               <div id="inProgressCards"></div> 
+           </div>
+
+           <div class="coluna" id="done">
+               <h3>Done</h3>
+               <div id="doneCards"></div>
+           </div>
+       </div>
+   </div>
+
+   <script src="scripts/kanban.js"></script>
+</body>
+</html>

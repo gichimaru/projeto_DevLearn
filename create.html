@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Criar Tarefa - TuscanoTask</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+       <h1>Nova Tarefa</h1>
+       <form id="formCreate">
+           <input type="text" id="titulo" placeholder="Título" required> 
+           <textarea id="descricao" placeholder="Descrição" required></textarea>
+           
+           <div class="form-group">
+               <label for="prioridade">Prioridade:</label>
+               <select id="prioridade" required>
+                   <option value="normal">Normal (Dá pra esperar)</option>
+                   <option value="importante">Importante (Fazer em breve)</option>
+                   <option value="urgente">Urgente (Fazer agora!)</option>
+               </select>
+           </div>
+           
+           <div class="form-group">
+               <label for="dataExpiracao">Data de Expiração:</label>
+               <input type="date" id="dataExpiracao">
+           </div>
+
+           <div class="button-group">
+               <button type="button" onclick="window.location.href='dashboard.html'">Voltar</button>
+               <button type="submit">Salvar</button>
+           </div>
+       </form>
+   </div>
+   <script src="scripts/dashboard.js"></script>
+</body>
+</html>

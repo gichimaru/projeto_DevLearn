@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <title>Pomodoro - TuscanoTask</title>
+   <link rel="stylesheet" href="style.css">
+   <style>
+       /* Estilos específicos do Pomodoro */
+       .timer {
+           font-size: 80px;
+           text-align: center; 
+           margin: 50px 0;
+           color: #1877f2; 
+       }
+
+       .pomodoro-controls {
+           display: flex;
+           gap: 20px; 
+           justify-content: center;
+       }
+
+       #btnIniciar {
+           background: #4CAF50;
+           padding: 15px 30px; 
+       }
+
+       #btnIniciar:hover {
+           background: #45a049; 
+       }
+   </style>
+</head>
+<body>
+   <div class="container">
+       <div class="header">
+           <div class="header-title-group">
+               <img src="images/tucano.png" alt="Tucano" class="logo-pomodoro">
+               <h1>Pomodoro TuscanoTask</h1>
+               <img src="images/tucano.png" alt="Tucano" class="logo-pomodoro right">
+           </div>
+           <button onclick="window.location.href='dashboard.html'" class="btn-voltar">Voltar</button>
+       </div>
+
+       <div class="timer" id="timer">25:00</div>
+      
+       <div class="pomodoro-controls">
+           <button onclick="iniciarPomodoro()" id="btnIniciar">Iniciar</button>
+           <button onclick="editarTempos()">⚙️ Editar Tempos</button>
+       </div>
+   </div>
+
+   <script src="scripts/pomodoro.js"></script>
+</body>
+</html>

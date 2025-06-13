@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <title>Dashboard - TuscanoTask</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+       <header class="dashboard-header">
+           <div class="header-title-group">
+               <img src="images/tucano.png" alt="Logo TuscanoTask" class="logo-header">
+               <h1 class="dashboard-title">TuscanoTask</h1>
+               <img src="images/tucano.png" alt="Tucano" class="logo-pomodoro right">
+
+           </div>
+           <button class="btn-logout" onclick="logout()">Sair</button>
+       </header>
+
+       <div class="agenda-container">
+           <h2>Acessos Rápidos</h2>
+           <a href="kanban.html" class="agenda-item">
+               <div class="agenda-icon">
+                   📊
+               </div>
+               <div class="agenda-text">
+                   <h3>Quadro Kanban</h3>
+                   <p>Organize suas tarefas em colunas visuais.</p>
+               </div>
+           </a>
+           <a href="pomodoro.html" class="agenda-item">
+               <div class="agenda-icon">
+                   ⏱️
+               </div>
+               <div class="agenda-text">
+                   <h3>Pomodoro Timer</h3>
+                   <p>Gerencie seu tempo com foco e pausas.</p>
+               </div>
+           </a>
+       </div>
+       <div class="tasks-section">
+           <div class="tasks-header">
+               <h2>Suas Tarefas</h2>
+               <div class="legenda">
+                   <span class="legenda-item"><span class="cor-urgente"></span> Urgente</span>
+                   <span class="legenda-item"><span class="cor-importante"></span> Importante</span>
+                   <span class="legenda-item"><span class="cor-normal"></span> Normal</span>
+               </div>
+           </div>
+           <div id="cardsList"></div>
+           <button
+               onclick="location.href='create.html'"
+               style="margin-top: 15px; width: 100%;"
+           >
+               + Nova Tarefa
+           </button>
+       </div>
+   </div>
+
+   <script src="scripts/dashboard.js"></script>
+</body>
+</html>

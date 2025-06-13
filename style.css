@@ -1,0 +1,386 @@
+/* Estilos Globais */
+/* Reset básico */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.auth-box {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 400px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background: #1877f2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #166fe5;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.button-group button {
+    flex: 1;
+}
+
+button[type="button"] {
+    background: #6c757d; /* cor diferente para o botão "Voltar" */
+}
+
+button[type="button"]:hover {
+    background: #5a6268;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn-voltar {
+    background: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-voltar:hover {
+    background: #5a6268;
+}
+
+body {
+    background: #f8f9fa; /* cor mais suave */
+}
+
+
+/* Estilos do Cabeçalho */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.dashboard-title {
+    font-size: 2.5em;
+    color: #1877f2;
+    margin: 0;
+}
+
+.btn-logout {
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 20px; /* mais arredondadas */
+    padding: 6px 15px; 
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-logout:hover {
+    background: #c82333;
+}
+
+/* Estilos pra logo e título */
+.logo {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.auth-box h1 {
+    margin-bottom: 25px;
+    font-size: 2.2em; /* fonte do título */
+    color: #333; /* cor */ 
+}
+
+/* forms de autenticação */
+.auth-box {
+    padding: 50px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 12px; 
+    margin-top: 80px;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espaço entre os inputs e o grupo de botões */
+}
+
+.button-group button {
+    flex: 1; 
+    margin: 0;
+}
+
+/* Estilo para o botão secundário (Criar Conta) */
+#btnCadastro {
+    background: #6c757d;
+}
+
+#btnCadastro:hover {
+    background: #5a6268;
+}
+
+
+/* Grupo do Título no Cabeçalho */
+.header-title-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-header {
+    height: 50px;
+}
+
+.btn-logout {
+    padding: 8px 18px; 
+    border-radius: 20px; 
+    font-size: 0.9em; 
+    width: auto;
+}
+
+.func-card {
+    border-left: 5px solid #1877f2;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.func-card:hover {
+    transform: translateY(-8px) scale(1.02); 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.func-card h2 {
+    color: #1877f2;
+}
+
+.form-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group select, .form-group input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.tasks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.legenda {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9em;
+}
+
+.legenda-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.legenda-item span[class^="cor-"] {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/* legenda */
+.cor-urgente { background-color: #ff5c5c; }
+.cor-importante { background-color: #ffb74d; }
+.cor-normal { background-color: #4db6ac; }
+
+.card {
+    position: relative;
+    padding-left: 20px;
+    border-left: 5px solid #ccc;
+}
+
+/* Cores de prioridade */
+.card.prioridade-urgente { border-left-color: #ff5c5c; }
+.card.prioridade-importante { border-left-color: #ffb74d; }
+.card.prioridade-normal { border-left-color: #4db6ac; }
+
+.card-info {
+    margin-bottom: 10px;
+}
+
+.card-info p {
+    margin: 5px 0;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.card-footer .data-expiracao {
+    font-size: 0.85em;
+    color: #777;
+    font-weight: bold;
+}
+
+.card-actions button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 0.8em;
+}
+
+/* Estilo para o grupo do título com os imagens */
+.header-title-group h1 {
+    font-size: 2.2em;
+    color: #333;
+    margin: 0;
+}
+
+.logo-pomodoro {
+    height: 60px;
+}
+
+/* inverter a imagem do tucano */
+.logo-pomodoro.right {
+    transform: scaleX(-1);
+}
+
+.btn-voltar {
+    background: #6c757d; 
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    width: auto;
+    border: none; 
+    cursor: pointer; 
+}
+
+
+
+/* botões de ação do Kanban */
+.kanban-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.kanban-actions button {
+    padding: 5px 8px;
+    font-size: 1em;
+}
+
+.agenda-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom: 50px;
+}
+
+.agenda-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.agenda-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.agenda-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.agenda-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+}
+
+.agenda-icon {
+    font-size: 2em;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+    border-radius: 8px;
+}
+
+.agenda-text h3 {
+    margin: 0 0 5px 0;
+    color: #1877f2;
+}
+
+.agenda-text p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+}
